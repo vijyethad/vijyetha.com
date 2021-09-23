@@ -1,4 +1,4 @@
-$primary: #ef476f;
+$primary: #e63946;
 @import "~bootstrap/scss/bootstrap";
 
 html,
@@ -20,6 +20,12 @@ body {
   color: white;
   position: relative;
   box-sizing: border-box;
+}
+
+.heroSection {
+  height: 100vh;
+  position: sticky;
+  top: 0;
 }
 
 .gray {
@@ -76,7 +82,7 @@ body {
     linear-gradient(90deg, #777, #606060);
 }
 .blue {
-  background-color: #060a2e;
+  background-color: #1d3557;
   background-image: radial-gradient(
       circle at 47% 14%,
       rgba(205, 205, 205, 0.04) 0%,
@@ -119,7 +125,7 @@ body {
       transparent 10%,
       transparent 100%
     ),
-    linear-gradient(#000000, #052766);
+    linear-gradient(#010a16, #1d3557);
 }
 .orange {
   background-color: #e77614;

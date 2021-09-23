@@ -1,20 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
+.introRoot {
+  margin: auto;
+  width: 70vw;
+  padding: 0 6rem;
+}
+
+.helperText {
+  position: absolute;
+  bottom: 2rem;
+  color: #f1faee8e;
+}
+
 .helloWorld {
   font-family: "Roboto Mono";
-  color: #ef476f;
 }
 
 .heroText {
   font-weight: 600;
-  font-size: 4rem;
-  color: #cccabf;
+  font-size: 3rem;
+  color: #f1faee;
   line-height: 1.1;
   &.title {
-    color: #cccabf8e;
+    color: #f1faee8e;
+    font-size: 2rem;
   }
 }
 
 .aboutMe {
-  color: #cccabf8e;
+  color: #f1faee8e;
 }

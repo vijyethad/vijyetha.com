@@ -28,16 +28,20 @@ const IndexPage = () => {
   return (
     <div ref={ref}>
       <title>Home Page</title>
-      <div style={{ display: "grid" }}>
-        <div className="description panel blue">
+      <div className="row">
+        <div
+          className="col-lg-6 col-md-12 heroSection blue "
+          style={{ display: "flex", alignItems: "center" }}
+        >
           <Intro />
         </div>
+        <div className="col-lg-6 col-md-12">
+          <section className="panel red">ONE</section>
+          <section className="panel orange">TWO</section>
+          <section className="panel purple">THREE</section>
+          <section className="panel green">FOUR</section>
+        </div>
       </div>
-      <section className="panel red">ONE</section>
-
-      <section className="panel orange">TWO</section>
-      <section className="panel purple">THREE</section>
-      <section className="panel green">FOUR</section>
     </div>
   );
 };
