@@ -1,20 +1,44 @@
-import * as React from "react"
+import * as React from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
+import "./index.scss";
 
-// markup
 const IndexPage = () => {
-  return (
-    <main style={pageStyles}>
-      <title>Home Page</title>
-      <h1>Vijyetha</h1>
-    </main>
-  )
-}
+  gsap.registerPlugin(ScrollTrigger);
 
-export default IndexPage
+  const ref = React.useRef(null);
+
+  React.useEffect(() => {
+    gsap.utils.toArray(".panel").forEach((panel, i) => {
+      ScrollTrigger.create({
+        trigger: panel,
+        start: "top top",
+        pin: true,
+        pinSpacing: false,
+      });
+    });
+
+    ScrollTrigger.create({
+      snap: 1 / 4,
+    });
+  });
+
+  return (
+    <div ref={ref}>
+      <title>Home Page</title>
+      <div class="description panel blue">
+        <div>
+          <h1>Vijyetha Dhanasekaran</h1>
+        </div>
+      </div>
+
+      <section class="panel red">ONE</section>
+      <section class="panel orange">TWO</section>
+      <section class="panel purple">THREE</section>
+      <section class="panel green">FOUR</section>
+    </div>
+  );
+};
+
+export default IndexPage;
