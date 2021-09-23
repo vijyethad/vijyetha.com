@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+.helloWorld {
+  font-family: "Roboto Mono";
+  color: #ef476f;
+}
+
+.heroText {
+  font-weight: 600;
+  font-size: 4rem;
+  color: #cccabf;
+  line-height: 1.1;
+  &.title {
+    color: #cccabf8e;
+  }
+}
+
+.aboutMe {
+  color: #cccabf8e;
+}

@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import "./index.scss";
+import Intro from "../components/Intro";
 
 const IndexPage = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -27,16 +28,16 @@ const IndexPage = () => {
   return (
     <div ref={ref}>
       <title>Home Page</title>
-      <div class="description panel blue">
-        <div>
-          <h1>Vijyetha Dhanasekaran</h1>
+      <div style={{ display: "grid" }}>
+        <div className="description panel blue">
+          <Intro />
         </div>
       </div>
+      <section className="panel red">ONE</section>
 
-      <section class="panel red">ONE</section>
-      <section class="panel orange">TWO</section>
-      <section class="panel purple">THREE</section>
-      <section class="panel green">FOUR</section>
+      <section className="panel orange">TWO</section>
+      <section className="panel purple">THREE</section>
+      <section className="panel green">FOUR</section>
     </div>
   );
 };

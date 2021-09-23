@@ -1,9 +1,13 @@
+$primary: #ef476f;
+@import "~bootstrap/scss/bootstrap";
+
 html,
 body {
   margin: 0;
   height: 100%;
   -webkit-overflow-scrolling: touch;
-  font-family: "Signika Negative", sans-serif, Arial;
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui,
+    BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
 }
 
 .panel {
@@ -12,13 +16,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 600;
-  font-size: 1.5em;
   text-align: center;
   color: white;
   position: relative;
   box-sizing: border-box;
-  padding: 10px;
 }
 
 .gray {
@@ -75,7 +76,7 @@ body {
     linear-gradient(90deg, #777, #606060);
 }
 .blue {
-  background-color: #2c7ad2;
+  background-color: #060a2e;
   background-image: radial-gradient(
       circle at 47% 14%,
       rgba(205, 205, 205, 0.04) 0%,
@@ -105,13 +106,6 @@ body {
       transparent 100%
     ),
     radial-gradient(
-      circle at 23% 82%,
-      rgba(249, 249, 249, 0.04) 0%,
-      rgba(249, 249, 249, 0.04) 60%,
-      transparent 60%,
-      transparent 100%
-    ),
-    radial-gradient(
       circle at 11% 54%,
       rgba(251, 251, 251, 0.04) 0%,
       rgba(251, 251, 251, 0.04) 23%,
@@ -125,7 +119,7 @@ body {
       transparent 10%,
       transparent 100%
     ),
-    linear-gradient(90deg, #2c7ad2, #1568c6);
+    linear-gradient(#000000, #052766);
 }
 .orange {
   background-color: #e77614;
